@@ -1,0 +1,113 @@
+.boton-palabra{
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    width: 22%;
+    height: 60px;
+    font-size: 1.2vw;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid gold;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.boton-palabra:hover{
+    background-color: gold;
+}
+
+#texto-boton-encima{
+    margin-bottom: 50px;
+}
+
+
+#boton-palabra-1:hover span{
+    display: none;
+}
+
+#boton-palabra-1:hover:before{
+    content: "Tengo dinero. Puedo comprar un libro.";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-2:hover span{
+    display: none;
+}
+
+#boton-palabra-2:hover:before{
+    content: "Tenemos tiempo. Podemos ir al cine.";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-3:hover span{
+    display: none;
+}
+
+#boton-palabra-3:hover:before{
+    content: "Michael es fuerte. Él puede levantar una mesa.";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-4:hover span{
+    display: none;
+}
+
+#boton-palabra-4:hover:before{
+    content: "Ella puede hablar con la nueva estudiante española.";
+    font-size: 1.0vw;
+}
+
+#boton-palabra-5:hover span{
+    display: none;
+}
+
+#boton-palabra-5:hover:before{
+    content: "No puedo hablar japonés.";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-6:hover span{
+    display: none;
+}
+
+#boton-palabra-6:hover:before{
+    content: "No puedo ir al cine hoy.";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-7:hover span{
+    display: none;
+}
+
+#boton-palabra-7:hover:before{
+    content: "Tom dijo que él podía montar una bicicleta cuando era joven.";
+    font-size: 1.0vw;
+}
+
+#boton-palabra-8:hover span{
+    display: none;
+}
+
+#boton-palabra-8:hover:before{
+    content: "Podía tocar el violín hace diez años.";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-9:hover span{
+    display: none;
+}
+
+#boton-palabra-9:hover:before{
+    content: "¿Podrías abrir la puerta por mí?";
+    font-size: 1.2vw;
+}
+
+#boton-palabra-10:hover span{
+    display: none;
+}
+
+#boton-palabra-10:hover:before{
+    content: "¿Me podrías decir qué hora es?";
+    font-size: 1.2vw;
+}

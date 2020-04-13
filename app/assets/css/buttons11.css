@@ -1,0 +1,135 @@
+.boton-palabra{
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    width: 22%;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid gold;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.boton-palabra:hover{
+    background-color: gold;
+}
+
+#texto-boton-encima{
+    margin-bottom: 50px;
+}
+
+
+#boton-palabra-1:hover span{
+    display: none;
+}
+
+#boton-palabra-1:hover:before{
+    content: "estoy";
+}
+
+#boton-palabra-2:hover span{
+    display: none;
+}
+
+#boton-palabra-2:hover:before{
+    content: "estas";
+}
+
+#boton-palabra-3:hover span{
+    display: none;
+}
+
+#boton-palabra-3:hover:before{
+    content: "esta él";
+}
+
+#boton-palabra-4:hover span{
+    display: none;
+}
+
+#boton-palabra-4:hover:before{
+    content: "esta élla";
+}
+
+#boton-palabra-5:hover span{
+    display: none;
+}
+
+#boton-palabra-5:hover:before{
+    content: "esta eso";
+}
+
+#boton-palabra-6:hover span{
+    display: none;
+}
+
+#boton-palabra-6:hover:before{
+    content: "estamos";
+}
+
+#boton-palabra-7:hover span{
+    display: none;
+}
+
+#boton-palabra-7:hover:before{
+    content: "estan";
+}
+
+#boton-palabra-11:hover span{
+    display: none;
+}
+
+#boton-palabra-11:hover:before{
+    content: "estoy";
+}
+
+#boton-palabra-12:hover span{
+    display: none;
+}
+
+#boton-palabra-12:hover:before{
+    content: "estas";
+}
+
+#boton-palabra-13:hover span{
+    display: none;
+}
+
+#boton-palabra-13:hover:before{
+    content: "esta él";
+}
+
+#boton-palabra-14:hover span{
+    display: none;
+}
+
+#boton-palabra-14:hover:before{
+    content: "esta élla";
+}
+
+#boton-palabra-15:hover span{
+    display: none;
+}
+
+#boton-palabra-15:hover:before{
+    content: "esta eso";
+}
+
+#boton-palabra-16:hover span{
+    display: none;
+}
+
+#boton-palabra-16:hover:before{
+    content: "estamos";
+}
+
+#boton-palabra-17:hover span{
+    display: none;
+}
+
+#boton-palabra-17:hover:before{
+    content: "estan";
+}
