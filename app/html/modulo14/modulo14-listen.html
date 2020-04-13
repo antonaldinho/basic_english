@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-        <title> M1: Listen and Repeat| CVA - Centro Virtual de Aprendizaje</title>
+        <title> U14: Listen and Repeat | CVA - Centro Virtual de Aprendizaje</title>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="../../assets/images/logo/favicon.png">
@@ -69,7 +69,7 @@
              <!-- Banner START -->                        
         <div class="card">
             <div class="overlay-dark bg" style="
-                background-image: url('../../assets/images/banner_conversation_U14x.jpg');                                          
+                background-image: url('../../assets/images/banner_conversation_u14x.jpg');                                          
                 background-repeat: no-repeat;
                 background-size: cover;
                 object-fit: cover">
@@ -149,7 +149,7 @@
                                             <!-- Modal -->
                                             <div class="modal fade" id="modalSchool" tabindex="-1"
                                                 role="dialog" aria-labelledby="exampleModalLabel"
-                                                aria-hidden="true">
+                                                aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                 <div class="modal-dialog modal-lg modal-dialog-scrollable"
                                                     role="document">
                                                     <div class="modal-content">
@@ -157,10 +157,10 @@
                                                             <h5 class="card-title">
                                                                 Friends talking / Amigas platicando
                                                             </h5>
-                                                            <button type="button" class="close"
+                                                            <!--button type="button" class="close"
                                                                 data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
-                                                            </button>
+                                                            </button-->
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="container-fluid">
@@ -179,7 +179,7 @@
                                                                         </p>
                                                                     </div>
                                                                     <div class="col-md-6 ml-auto">
-                                                                        <img src="../../assets/images/U14_friends_talkingx.jpg" width="300">
+                                                                        <img src="../../assets/images/u14_friends_talkingx.jpg" width="300">
                                                                         <audio controls
                                                                             src="../../assets/audios/U14DialogoA.m4a">
                                                                         </audio>
@@ -189,7 +189,7 @@
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="button"
-                                                                data-dismiss="modal">Cerrar</button>
+                                                                data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -213,17 +213,17 @@
                                             <!-- Modal -->
                                             <div class="modal fade" id="modalOffice" tabindex="-1"
                                                 role="dialog" aria-labelledby="exampleModalLabel"
-                                                aria-hidden="true">
+                                                aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                 <div class="modal-dialog modal-lg modal-dialog-centered"
                                                     role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
 
                                                             <h5 class="card-title"> Looking for / Buscando </h5>
-                                                            <button type="button" class="close"
+                                                            <!--button type="button" class="close"
                                                                 data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
-                                                            </button>
+                                                            </button-->
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="container-fluid">
@@ -244,7 +244,7 @@
 
                                                                     </div>
                                                                     <div class="col-md-6 ml-auto">
-                                                                        <img src="../../assets/images/U14_universityx.jpg" width="300">
+                                                                        <img src="../../assets/images/u14_universityx.jpg" width="300">
                                                                         <audio controls
                                                                             src="../../assets/audios/U14DialogoB.m4a">
                                                                         </audio>
@@ -254,7 +254,7 @@
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="button"
-                                                                data-dismiss="modal">Cerrar</button>
+                                                                data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -389,7 +389,7 @@
 
 
         <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-        <script type="text/javascript">show(0.13)</script>
+        <script type="text/javascript">show(0.94)</script>
 
         <!-- endbuild -->
 
@@ -410,6 +410,22 @@
                     }
                 }
             }, true);
+        </script>
+
+        <script type="text/javascript">
+            function stopAudio(){
+                $("audio").each(function(index) {
+                var num = index+1;
+                $(this).attr('id','myaudio' + num);
+                });
+                var aplayers = $('audio');
+                var leng = $('audio').length;
+                //console.log(leng);
+                for(var i = 0; i < leng;i++){
+                        aplayers[i].pause();
+                }
+            }
+
         </script>
     </body>
 </html>
