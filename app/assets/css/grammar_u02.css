@@ -163,3 +163,67 @@
 #u01-palabra-15:hover:before{
     content: "Cerrar";
 }
+
+#u01-palabra-16:hover span{
+    display: none;
+}
+
+#u01-palabra-16:hover:before{
+    content: "¿A dónde vas a ir mañana?";
+}
+
+#u01-palabra-17:hover span{
+    display: none;
+}
+
+#u01-palabra-17:hover:before{
+    content: "¿Cómo te llamas?";
+}
+
+#u01-palabra-18:hover span{
+    display: none;
+}
+
+#u01-palabra-18:hover:before{
+    content: "¿Quién es tu padre?";
+}
+
+#u01-palabra-19:hover span{
+    display: none;
+}
+
+#u01-palabra-19:hover:before{
+    content: "¿Por qué estudias inglés?";
+}
+
+#u01-palabra-20:hover span{
+    display: none;
+}
+
+#u01-palabra-20:hover:before{
+    content: "¿Cuándo vas a la escuela?";
+}
+
+#u01-palabra-21:hover span{
+    display: none;
+}
+
+#u01-palabra-21:hover:before{
+    content: "¿Cómo vas a trabajar?";
+}
+
+#u01-palabra-22:hover span{
+    display: none;
+}
+
+#u01-palabra-22:hover:before{
+    content: "¿Cuánto tiempo tienes?";
+}
+
+#u01-palabra-23:hover span{
+    display: none;
+}
+
+#u01-palabra-23:hover:before{
+    content: "¿Cuántos hermanos tienes?";
+}
