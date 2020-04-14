@@ -148,17 +148,14 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalSchool" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-scrollable"
                                                                 role="document">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
                                                                         <h5 class="card-title">Betty and Mike are in front of a school / Betty y Mike estan frente a la escuela
                                                                         </h5>
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
+                                                                     
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="container-fluid">
@@ -191,7 +188,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -214,7 +211,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalOffice" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-centered"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -222,10 +219,7 @@
 
                                                                         <h5 class="card-title">Friends haven’t seen each other in years/Amigos que no se han visto en años
                                                                         </h5>
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
+                                                                      
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="container-fluid">
@@ -259,7 +253,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -282,7 +276,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalParty" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-centered"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -290,11 +284,7 @@
 
                                                                         <h5 class="card-title">Introducing people/ Presentando gente
                                                                         </h5>
-                                                                        
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
+                                                                     
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="container-fluid">
@@ -320,7 +310,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -467,7 +457,23 @@
                       aplayers[i].pause();
                   }
               }
-          }, true);</script>
+          }, true)
+          </script>
+          <script type="text/javascript">
+            function stopAudio(){
+                $("audio").each(function(index) {
+                var num = index+1;
+                $(this).attr('id','myaudio' + num);
+                });
+                var aplayers = $('audio');
+                var leng = $('audio').length;
+                //console.log(leng);
+                for(var i = 0; i < leng;i++){
+                        aplayers[i].pause();
+                }
+            }
+    
+        </script>
 </body>
 
 </html>
