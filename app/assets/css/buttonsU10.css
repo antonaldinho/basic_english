@@ -115,7 +115,7 @@
 }
 
 #boton-palabra-9:hover:before{
-    content: "me";
+    content: "Yo";
 }
 
 #boton-palabra-10:hover span{
@@ -123,7 +123,7 @@
 }
 
 #boton-palabra-10:hover:before{
-    content: "te";
+    content: "Tú";
 }
 
 #boton-palabra-11:hover span{
@@ -131,7 +131,7 @@
 }
 
 #boton-palabra-11:hover:before{
-    content: "le";
+    content: "Él";
 }
 
 #boton-palabra-12:hover span{
@@ -139,7 +139,7 @@
 }
 
 #boton-palabra-12:hover:before{
-    content: "le";
+    content: "Ella";
 }
 
 #boton-palabra-13:hover span{
@@ -147,7 +147,7 @@
 }
 
 #boton-palabra-13:hover:before{
-    content: "lo/la";
+    content: "Eso";
 }
 
 #boton-palabra-14:hover span{
@@ -155,7 +155,7 @@
 }
 
 #boton-palabra-14:hover:before{
-    content: "nos";
+    content: "Nosotros";
 }
 
 #boton-palabra-15:hover span{
@@ -163,7 +163,7 @@
 }
 
 #boton-palabra-15:hover:before{
-    content: "les";
+    content: "Ustedes";
 }
 
 #boton-palabra-16:hover span{
@@ -171,7 +171,7 @@
 }
 
 #boton-palabra-16:hover:before{
-    content: "les";
+    content: "Ellos";
 }
 
 #boton-palabra-17:hover span{
