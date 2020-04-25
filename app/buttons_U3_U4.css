@@ -1,0 +1,403 @@
+.boton-palabra-full {
+    float: left;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: 100%;
+    height: fit-content;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid #daa520;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.boton-palabra-fit-content {
+    float: left;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid #daa520;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.boton-palabra-full:hover {
+    cursor: pointer;
+    border-color: #55a2fe;
+}
+.boton-palabra-full:hover svg {
+    fill: #55a2fe;
+}
+
+.boton-palabra-fit-content:hover {
+    cursor: pointer;
+    border-color: #55a2fe;
+}
+.boton-palabra-fit-content:hover svg {
+    fill: #55a2fe;
+}
+
+
+#boton-palabra-1:hover span{
+    display: none;
+}
+
+#boton-palabra-1:hover:before{
+    content: "Mamá";
+}
+
+#boton-palabra-2:hover span{
+    display: none;
+}
+
+#boton-palabra-2:hover:before{
+    content: "Papá";
+}
+
+#boton-palabra-3:hover span{
+    display: none;
+}
+
+#boton-palabra-3:hover:before{
+    content: "Esposo";
+}
+
+#boton-palabra-4:hover span{
+    display: none;
+}
+
+#boton-palabra-4:hover:before{
+    content: "Esposa";
+}
+
+#boton-palabra-5:hover span{
+    display: none;
+}
+
+#boton-palabra-5:hover:before{
+    content: "Niños/as";
+}
+
+#boton-palabra-6:hover span{
+    display: none;
+}
+
+#boton-palabra-6:hover:before{
+    content: "Hijo";
+}
+
+#boton-palabra-7:hover span{
+    display: none;
+}
+
+#boton-palabra-7:hover:before{
+    content: "Hija";
+}
+
+#boton-palabra-8:hover span{
+    display: none;
+}
+
+#boton-palabra-8:hover:before{
+    content: "Abuela";
+}
+
+#boton-palabra-9:hover span{
+    display: none;
+}
+
+#boton-palabra-9:hover:before{
+    content: "Abuelo";
+}
+
+#boton-palabra-10:hover span{
+    display: none;
+}
+
+#boton-palabra-10:hover:before{
+    content: "Tías";
+}
+
+#boton-palabra-11:hover span{
+    display: none;
+}
+
+#boton-palabra-11:hover:before{
+    content: "Tíos";
+}
+
+#boton-palabra-12:hover span{
+    display: none;
+}
+
+#boton-palabra-12:hover:before{
+    content: "Primos";
+}
+
+#boton-palabra-13:hover span{
+    display: none;
+}
+
+#boton-palabra-13:hover:before{
+    content: "Salir de";
+}
+
+#boton-palabra-14:hover span{
+    display: none;
+}
+
+#boton-palabra-14:hover:before{
+    content: "Obtener";
+}
+
+#boton-palabra-15:hover span{
+    display: none;
+}
+
+#boton-palabra-15:hover:before{
+    content: "Decir";
+}
+
+#boton-palabra-16:hover span{
+    display: none;
+}
+
+#boton-palabra-16:hover:before{
+    content: "Estudiando";
+}
+
+#boton-palabra-17:hover span{
+    display: none;
+}
+
+#boton-palabra-17:hover:before{
+    content: "Entrar";
+}
+
+#boton-palabra-18:hover span{
+    display: none;
+}
+
+#boton-palabra-18:hover:before{
+    content: "Cerrar";
+}
+
+#boton-palabra-19:hover span{
+    display: none;
+}
+
+#boton-palabra-19:hover:before{
+    content: "Tener";
+}
+
+#boton-palabra-20:hover span{
+    display: none;
+}
+
+#boton-palabra-20:hover:before{
+    content: "Ir";
+}
+
+#boton-palabra-21:hover span{
+    display: none;
+}
+
+#boton-palabra-21:hover:before{
+    content: "Viendo";
+}
+
+#boton-palabra-22:hover span{
+    display: none;
+}
+
+#boton-palabra-22:hover:before{
+    content: "Tarea";
+}
+
+#boton-palabra-23:hover span{
+    display: none;
+}
+
+#boton-palabra-23:hover:before{
+    content: "Universidad";
+}
+
+#boton-palabra-24:hover span{
+    display: none;
+}
+
+#boton-palabra-24:hover:before{
+    content: "Años";
+}
+
+#boton-palabra-25:hover span{
+    display: none;
+}
+
+#boton-palabra-25:hover:before{
+    content: "Excelente";
+}
+
+#boton-palabra-26:hover span{
+    display: none;
+}
+
+#boton-palabra-26:hover:before{
+    content: "Difícil"
+}
+
+#boton-palabra-27:hover span{
+    display: none;
+}
+
+#boton-palabra-27:hover:before{
+    content: "Manejar";
+}
+
+#boton-palabra-28:hover span{
+    display: none;
+}
+
+#boton-palabra-28:hover:before{
+    content: "Aplicar";
+}
+
+#boton-palabra-29:hover span{
+    display: none;
+}
+
+#boton-palabra-29:hover:before{
+    content: "Hablar";
+}
+
+#boton-palabra-30:hover span{
+    display: none;
+}
+
+#boton-palabra-30:hover:before{
+    content: "Escuchar";
+}
+
+#boton-palabra-31:hover span{
+    display: none;
+}
+
+#boton-palabra-31:hover:before{
+    content: "Ver";
+}
+
+#boton-palabra-32:hover span{
+    display: none;
+}
+
+#boton-palabra-32:hover:before{
+    content: "Bailar";
+}
+
+#boton-palabra-33:hover span{
+    display: none;
+}
+#boton-palabra-33:hover:before{
+    content: "Mirando";
+}
+
+#boton-palabra-34:hover span{
+    display: none;
+}
+#boton-palabra-34:hover:before{
+    content: "Llamando";
+}
+#boton-palabra-35:hover span{
+    display: none;
+}
+#boton-palabra-35:hover:before{
+    content: "Viendo";
+}
+
+#boton-palabra-36:hover span{
+    display: none;
+}
+#boton-palabra-36:hover:before{
+    content: "Necesitando";
+}
+#boton-palabra-37:hover span{
+    display: none;
+}
+#boton-palabra-37:hover:before{
+    content: "Jugando";
+}
+#boton-palabra-38:hover span{
+    display: none;
+}
+#boton-palabra-38:hover:before{
+    content: "Preguntando";
+}
+#boton-palabra-39:hover span{
+    display: none;
+}
+#boton-palabra-39:hover:before{
+    content: "Aprendiendo";
+}
+#boton-palabra-40:hover span{
+    display: none;
+}
+#boton-palabra-40:hover:before{
+    content: "Ayudando";
+}
+#boton-palabra-41:hover span{
+    display: none;
+}
+#boton-palabra-41:hover:before{
+    content: "Hablando";
+}
+#boton-palabra-42:hover span{
+    display: none;
+}
+#boton-palabra-42:hover:before{
+    content: "Amando";
+}
+#boton-palabra-43:hover span{
+    display: none;
+}
+#boton-palabra-43:hover:before{
+    content: "Dejando";
+}
+#boton-palabra-44:hover span{
+    display: none;
+}
+#boton-palabra-44:hover:before{
+    content: "Dando";
+}
+#boton-palabra-45:hover span{
+    display: none;
+}
+#boton-palabra-45:hover:before{
+    content: "Viniendo";
+}
+#boton-palabra-46:hover span{
+    display: none;
+}
+#boton-palabra-46:hover:before{
+    content: "Comprando";
+}
+#boton-palabra-47:hover span{
+    display: none;
+}
+#boton-palabra-47:hover:before{
+    content: "Cerrando";
+}
+#boton-palabra-48:hover span{
+    display: none;
+}
+#boton-palabra-48:hover:before{
+    content: "Viviendo  ";
+}
+
+
