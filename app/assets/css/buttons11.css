@@ -13,6 +13,29 @@
     transition-timing-function: linear;
 }
 
+.boton-palabra-full {
+    float: left;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: 100%;
+    height: fit-content;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid #daa520;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.boton-palabra-full:hover {
+    cursor: pointer;
+    border-color: #55a2fe;
+}
+.boton-palabra-full:hover svg {
+    fill: #55a2fe;
+}
+
 .boton-palabra:hover{
     background-color: gold;
 }
