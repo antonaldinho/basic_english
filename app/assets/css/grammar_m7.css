@@ -1,7 +1,6 @@
 .boton-palabra{
-    display: inline-block;
     float: left;
-    word-wrap: break-all;
+    /* margin-left: 10%; */
     margin-bottom: 1%;
     width: 100%;
     height: fit-content;
@@ -14,7 +13,11 @@
     transition-timing-function: linear;
 }
 .boton-palabra:hover{
-    background-color: gold;
+    cursor: pointer;
+    border-color: #55a2fe;
+}
+.boton-palabra:hover svg {
+    fill: #55a2fe;
 }
 
 #texto-boton-encima{

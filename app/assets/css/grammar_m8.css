@@ -31,12 +31,17 @@
 #boton-texto-1:hover span{
     display: none;
 }
+#boton-texto-1:hover {
+    cursor: pointer;
+    border-color: #55a2fe;
+}
 #boton-texto-1:hover:before{
     content: "Very y too van antes de los adjetivos. No tienen el mismo significado. En el primer ejemplo, 'muy lejos' (very far) es posible pero difícil caminar al banco. En el segundo ejemplo 'Demasiado lejos (too far) es imposible caminar al banco.'";
 }
 
 .boton-palabra:hover{
-    background-color: gold;
+    cursor: pointer;
+    border-color: #55a2fe;
 }
 
 #texto-boton-encima{
