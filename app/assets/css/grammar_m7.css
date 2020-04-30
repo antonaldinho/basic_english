@@ -1,20 +1,23 @@
 .boton-palabra{
     float: left;
-    margin-left: 10%;
-    margin-bottom: 50px;
-    width: 22%;
-    height: 60px;
-    font-size: 1.2vw;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: 100%;
+    height: fit-content;
+    font-size: 24px;
     border-radius: 15px;
     background-color: white;
-    border: 3px solid gold;
+    border: 3px solid #daa520;
     transition-property: background-color;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     transition-timing-function: linear;
 }
-
 .boton-palabra:hover{
-    background-color: gold;
+    cursor: pointer;
+    border-color: #55a2fe;
+}
+.boton-palabra:hover svg {
+    fill: #55a2fe;
 }
 
 #texto-boton-encima{
@@ -28,7 +31,6 @@
 
 #boton-palabra-1:hover:before{
     content: "Tengo dinero. Puedo comprar un libro.";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-2:hover span{
@@ -37,7 +39,6 @@
 
 #boton-palabra-2:hover:before{
     content: "Tenemos tiempo. Podemos ir al cine.";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-3:hover span{
@@ -46,7 +47,6 @@
 
 #boton-palabra-3:hover:before{
     content: "Michael es fuerte. Él puede levantar una mesa.";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-4:hover span{
@@ -55,7 +55,6 @@
 
 #boton-palabra-4:hover:before{
     content: "Ella puede hablar con la nueva estudiante española.";
-    font-size: 1.0vw;
 }
 
 #boton-palabra-5:hover span{
@@ -64,7 +63,6 @@
 
 #boton-palabra-5:hover:before{
     content: "No puedo hablar japonés.";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-6:hover span{
@@ -73,7 +71,6 @@
 
 #boton-palabra-6:hover:before{
     content: "No puedo ir al cine hoy.";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-7:hover span{
@@ -82,7 +79,6 @@
 
 #boton-palabra-7:hover:before{
     content: "Tom dijo que él podía montar una bicicleta cuando era joven.";
-    font-size: 1.0vw;
 }
 
 #boton-palabra-8:hover span{
@@ -91,7 +87,6 @@
 
 #boton-palabra-8:hover:before{
     content: "Podía tocar el violín hace diez años.";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-9:hover span{
@@ -100,7 +95,6 @@
 
 #boton-palabra-9:hover:before{
     content: "¿Podrías abrir la puerta por mí?";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-10:hover span{
@@ -109,5 +103,4 @@
 
 #boton-palabra-10:hover:before{
     content: "¿Me podrías decir qué hora es?";
-    font-size: 1.2vw;
 }

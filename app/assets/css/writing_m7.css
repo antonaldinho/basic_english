@@ -14,7 +14,8 @@
 }
 
 .boton-palabra:hover{
-    background-color: gold;
+    cursor: pointer;
+    border-color: #55a2fe;
 }
 
 #texto-boton-encima{

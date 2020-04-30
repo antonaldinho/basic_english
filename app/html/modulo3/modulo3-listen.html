@@ -147,17 +147,14 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalSchool" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-scrollable"
                                                                 role="document">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
                                                                         <h5 class="card-title">An emergency call / Una llamada de emergencia
                                                                         </h5>
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
+                                                                     
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="container-fluid">
@@ -166,8 +163,8 @@
                                                                                     <p>
                                                                                         <small><b>Police:</b> Hello! Police Department. Can I help you? <br></small>
                                                                                         <small><b>Woman:</b> Yes, I have an emergency..<br></small> 
-                                                                                        <small><b>Police:</b>What is the problem?<br> </small>
-                                                                                        <small><b>Woman:</b>My cat is stuck in the tree and will not come down.<br></small> 
+                                                                                        <small><b>Police:</b> What is the problem?<br> </small>
+                                                                                        <small><b>Woman:</b> My cat is stuck in the tree and will not come down.<br></small> 
                                                                                         <small><b>Police:</b>: I need some information from you. What is your name?<br></small>
                                                                                         <small><b>Woman:</b> My name is Norma Jones.<br></small>
                                                                                         <small><b>Police:</b>What is your address?<br></small>
@@ -175,7 +172,7 @@
                                                                                         <small><b>Police:</b> What is your telephone number? </small><br>
                                                                                         <small><b>Woman:</b> My telephone number is 765-4321. </small><br>
                                                                                         <small><b>Police:</b> We’re on our way. </small><br>
-                                                                                        <small><b>Woman:</b>Thank you officer. </small></p>
+                                                                                        <small><b>Woman:</b> Thank you officer. </small></p>
 
                                                                                 </div>
                                                                                 <div class="col-md-6 ml-auto">
@@ -190,7 +187,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -213,7 +210,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalOffice" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-centered"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -221,10 +218,7 @@
 
                                                                         <h5 class="card-title">A speeding ticket / Multa de transito
                                                                         </h5>
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
+                                                                      
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="container-fluid">
@@ -258,7 +252,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -281,7 +275,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalParty" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true"  data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-centered"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -289,10 +283,7 @@
 
                                                                         <h5 class="card-title">Applying for a job /  Solicitando un trabajo
                                                                         </h5>
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
+                                                                     
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="container-fluid">
@@ -334,7 +325,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -483,6 +474,22 @@
                   }
               }
           }, true);</script>
+
+    <script type="text/javascript">
+        function stopAudio(){
+            $("audio").each(function(index) {
+            var num = index+1;
+            $(this).attr('id','myaudio' + num);
+            });
+            var aplayers = $('audio');
+            var leng = $('audio').length;
+            //console.log(leng);
+            for(var i = 0; i < leng;i++){
+                    aplayers[i].pause();
+            }
+        }
+    </script>
+
 </body>
 
 </html>

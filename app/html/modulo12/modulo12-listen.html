@@ -162,7 +162,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalSchool" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-scrollable"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -225,7 +225,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -249,7 +249,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalOffice" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-centered"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -311,7 +311,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -334,7 +334,7 @@
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modalParty" tabindex="-1"
                                                             role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
+                                                            aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                                             <div class="modal-dialog modal-lg modal-dialog-centered"
                                                                 role="document">
                                                                 <div class="modal-content">
@@ -417,7 +417,7 @@
 
                                                                                 </div>
                                                                                 <div class="col-md-6 ml-auto">
-                                                                                    <img src="../../assets/images/course/u12/dr.jpg"
+                                                                                    <img src="../../assets/images/modulo10/shutterstock_551419429.jpg"
                                                                                         width="300">
                                                                                     <audio controls
                                                                                         src="../../assets/audios/u12/U12DialogoC.m4a">
@@ -427,7 +427,7 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="button"
-                                                                            data-dismiss="modal">Cerrar</button>
+                                                                            data-dismiss="modal" onclick="stopAudio()">Cerrar</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -470,18 +470,43 @@
                     </div>
 
 
+                    <!-- Buttons next and previous START-->
                     <div class="row">
                         <div class="col text-center">
                             <div class="btn-group">
+
                                 <a class="btn btn-default" role="button" href="modulo12-start.html">
                                     <span>Atrás</span>
                                 </a>
+
+                                <a class="btn btn-default" role="button" href="modulo12-listen.html">
+                                    <span>1</span>
+                                </a>
+
+                                <a class="btn btn-default" role="button" href="modulo12-grammar.html">
+                                    <span>2</span>
+                                </a>
+
+                                <a class="btn btn-default" role="button" href="modulo12-vocabulary.html">
+                                    <span>3</span>
+                                </a>
+
+                                <a class="btn btn-default" role="button"  href="modulo12-reading.html">
+                                    <span>4</span>
+                                </a>
+
+                                <a class="btn btn-default" role="button" href="modulo12-writing.html">
+                                    <span>5</span>
+                                </a>
+                        
                                 <a class="btn btn-default" role="button" href="modulo12-grammar.html">
                                     <span>Siguiente</span>
                                 </a>
+
                             </div>
                         </div>
                     </div>
+                    <!-- Buttons next and previous END-->
 
                 </div>
             </div>
@@ -539,6 +564,21 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <script type="text/javascript">
+        function stopAudio(){
+            $("audio").each(function(index) {
+            var num = index+1;
+            $(this).attr('id','myaudio' + num);
+	        });
+            var aplayers = $('audio');
+            var leng = $('audio').length;
+            //console.log(leng);
+            for(var i = 0; i < leng;i++){
+                    aplayers[i].pause();
+            }
+        }
+
+    </script>
 
 </body>
 
