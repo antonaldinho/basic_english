@@ -1,4 +1,4 @@
-.boton-palabra {
+.boton-palabra-full {
     float: left;
     /* margin-left: 10%; */
     margin-bottom: 1%;
@@ -13,109 +13,129 @@
     transition-timing-function: linear;
 }
 
+.boton-palabra-fit-content {
+    float: left;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid #daa520;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
 
-.boton-palabra:hover {
+.boton-palabra-full:hover {
     cursor: pointer;
     border-color: #55a2fe;
 }
-
-#texto-boton-encima{
-    margin-bottom: 50px;
+.boton-palabra-full:hover svg {
+    fill: #55a2fe;
 }
 
+.boton-palabra-fit-content:hover {
+    cursor: pointer;
+    border-color: #55a2fe;
+}
+.boton-palabra-fit-content:hover svg {
+    fill: #55a2fe;
+}
 
-#boton-palabra-1:hover span{
+#u06-palabra-1:hover span{
     display: none;
 }
 
-#boton-palabra-1:hover:before{
+#u06-palabra-1:hover:before{
     content: "Artista";
 }
 
-#boton-palabra-2:hover span{
+#u06-palabra-2:hover span{
     display: none;
 }
 
-#boton-palabra-2:hover:before{
+#u06-palabra-2:hover:before{
     content: "Taxista";
 }
 
-#boton-palabra-3:hover span{
+#u06-palabra-3:hover span{
     display: none;
 }
 
-#boton-palabra-3:hover:before{
+#u06-palabra-3:hover:before{
     content: "Carpintero";
 }
 
-#boton-palabra-4:hover span{
+#u06-palabra-4:hover span{
     display: none;
 }
 
-#boton-palabra-4:hover:before{
+#u06-palabra-4:hover:before{
     content: "Jardinero";
 }
 
-#boton-palabra-5:hover span{
+#u06-palabra-5:hover span{
     display: none;
 }
 
-#boton-palabra-5:hover:before{
+#u06-palabra-5:hover:before{
     content: "Oficial de policía";
 }
 
-#boton-palabra-6:hover span{
+#u06-palabra-6:hover span{
     display: none;
 }
 
-#boton-palabra-6:hover:before{
+#u06-palabra-6:hover:before{
     content: "Maestro, a";
 }
 
-#boton-palabra-7:hover span{
+#u06-palabra-7:hover span{
     display: none;
 }
 
-#boton-palabra-7:hover:before{
+#u06-palabra-7:hover:before{
     content: "Dibujar/Pintar";
 }
 
-#boton-palabra-8:hover span{
+#u06-palabra-8:hover span{
     display: none;
 }
 
-#boton-palabra-8:hover:before{
+#u06-palabra-8:hover:before{
     content: "Manejar un taxi";
 }
 
-#boton-palabra-9:hover span{
+#u06-palabra-9:hover span{
     display: none;
 }
 
-#boton-palabra-9:hover:before{
+#u06-palabra-9:hover:before{
     content: "Construir";
 }
 
-#boton-palabra-10:hover span{
+#u06-palabra-10:hover span{
     display: none;
 }
 
-#boton-palabra-10:hover:before{
+#u06-palabra-10:hover:before{
     content: "Plantar";
 }
 
-#boton-palabra-11:hover span{
+#u06-palabra-11:hover span{
     display: none;
 }
 
-#boton-palabra-11:hover:before{
+#u06-palabra-11:hover:before{
     content: "Proteger";
 }
 
-#boton-palabra-12:hover span{
+#u06-palabra-12:hover span{
     display: none;
 }
 
-#boton-palabra-12:hover:before{
+#u06-palabra-12:hover:before{
     content: "Enseñar";
 }
