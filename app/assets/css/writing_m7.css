@@ -1,15 +1,15 @@
 .boton-palabra{
     float: left;
-    margin-left: 10%;
-    margin-bottom: 50px;
-    width: 40%;
-    height: 60px;
-    font-size: 1.2vw;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: 60%;
+    height: fit-content;
+    font-size: 24px;
     border-radius: 15px;
     background-color: white;
-    border: 3px solid gold;
+    border: 3px solid #daa520;
     transition-property: background-color;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     transition-timing-function: linear;
 }
 
@@ -29,7 +29,6 @@
 
 #boton-palabra-1:hover:before{
     content: "It's ten-thirty";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-2:hover span{
@@ -38,7 +37,6 @@
 
 #boton-palabra-2:hover:before{
     content: "It's fifteen past three";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-3:hover span{
@@ -47,7 +45,6 @@
 
 #boton-palabra-3:hover:before{
     content: "It's a quarter to nine / It's eight forty-five";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-4:hover span{
@@ -56,7 +53,6 @@
 
 #boton-palabra-4:hover:before{
     content: "It's eleven o' clock";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-5:hover span{
@@ -65,7 +61,6 @@
 
 #boton-palabra-5:hover:before{
     content: "It's six and a half / It's six thirty";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-6:hover span{
@@ -74,7 +69,6 @@
 
 #boton-palabra-6:hover:before{
     content: "It's ten to three / It's two fifty";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-7:hover span{
@@ -83,7 +77,6 @@
 
 #boton-palabra-7:hover:before{
     content: "It's twelve o' clock";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-8:hover span{
@@ -92,7 +85,6 @@
 
 #boton-palabra-8:hover:before{
     content: "It's ten past five / It's five ten";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-9:hover span{
@@ -101,7 +93,6 @@
 
 #boton-palabra-9:hover:before{
     content: "It's one-thirty / It's one and a half";
-    font-size: 1.2vw;
 }
 
 #boton-palabra-10:hover span{
@@ -110,5 +101,4 @@
 
 #boton-palabra-10:hover:before{
     content: "It's a quarter past four / It's four fifteen";
-    font-size: 1.2vw;
 }
