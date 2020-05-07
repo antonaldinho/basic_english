@@ -1,3 +1,4 @@
+
 function getPath(){
     var str=window.location.href;
     var str_array=str.split('/');
@@ -23,20 +24,21 @@ $(document).ready(function(){
         $("#sideNav a").each(function() {
             
             var _href = this.getAttribute("href"); 
-            if( typeof(_href) != 'undefined' && _href!="" && _href.search(".html")!=-1){
+            if( typeof(_href) != 'undefined' && _href!="" && _href.search("html")!=-1){
                 $(this).prop("href", getPath()+_href);
             }
         });
         $("div#sideNav > div > div.side-nav-logo > a > div.logo").each(function(){
             $(this).css("background-image","url("+getPath()+"assets/images/logo/logo.png)");
         });
+        $('.scrollable').perfectScrollbar();
     });
     $.get(getPath()+"assets/js/recycled/footer.html", function(html_string){
         $("footer.content-footer").html(html_string); 
         $("footer.content-footer a").each(function() {
             
             var _href = this.getAttribute("href"); 
-            if( typeof(_href) != 'undefined' && _href!="" && _href.search(".html")!=-1){
+            if( typeof(_href) != 'undefined' && _href!="" && _href.search("html")!=-1){
                 $(this).prop("href", getPath()+_href);
             }
         });
@@ -46,7 +48,7 @@ $(document).ready(function(){
         $("div.header.navbar a").each(function() {
             
             var _href = this.getAttribute("href"); 
-            if( typeof(_href) != 'undefined' && _href!="" && _href.search(".html")!=-1){
+            if( typeof(_href) != 'undefined' && _href!="" && _href.search("html")!=-1){
                 $(this).prop("href", getPath()+_href);
             }
         });
@@ -57,6 +59,5 @@ $(document).ready(function(){
             }
         });
     });
-
 
 });
