@@ -10,6 +10,7 @@ function getPath(){
             return;
         }
         element=element.toLowerCase();
+        
         if(element=="html" || element=="src"){
             construct=true;
         }
@@ -24,8 +25,8 @@ $(document).ready(function(){
         $("#sideNav a").each(function() {
             
             var _href = this.getAttribute("href"); 
-            if( typeof(_href) != 'undefined' && _href!="" && _href.search("html")!=-1){
-                $(this).prop("href", getPath()+_href);
+            if( typeof(_href) != 'undefined' && _href!="" &&_href.search("html")!=-1 ){
+                $(this).prop("href", getPath() + _href);
             }
         });
         $("div#sideNav > div > div.side-nav-logo > a > div.logo").each(function(){
@@ -61,3 +62,4 @@ $(document).ready(function(){
     });
 
 });
+

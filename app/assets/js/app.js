@@ -5,7 +5,9 @@
 	
 	// Side Nav
 	function sideNav() {
+		
 		$('.side-nav').on('click','.side-nav-menu li a', function(e) {
+			setTimeout(1000000);
 			if ($(this).parent().hasClass("open")) {
 				
 				$(this).parent().children('.dropdown-menu').slideUp(200, function() {
